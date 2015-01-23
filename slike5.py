@@ -3,10 +3,26 @@ import time
 from PIL import Image
 from PIL import ImageChops
 import folder
+import win32gui
 
 def grabi(pomak,pomak2):
-
     dir=folder.get()
+    toplist, winlist = [], []
+    def enum_cb(hwnd, results):
+        winlist.append((hwnd, win32gui.GetWindowText(hwnd)))
+    win32gui.EnumWindows(enum_cb, toplist)
+
+    firefox = [(hwnd, title) for hwnd, title in winlist if 'notepad++' in title.lower()]
+    # just grab the hwnd for first window matching firefox
+    firefox = firefox[0]
+    hwnd = firefox[0]
+    win32gui.SetForegroundWindow(hwnd)
+    win32gui.MoveWindow(hwnd, 0, 0, 1028, 734, True)
+    bbox = win32gui.GetWindowRect(hwnd)
+    time.sleep(4)
+    img = ImageGrab.grab(bbox)
+    img.save(dir+'slika.jpg','JPEG')
+    
 
     #time.sleep(4)
     #img = ImageGrab.grab()

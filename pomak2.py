@@ -20,5 +20,5 @@ def kamo():
                 break
 
     #print(pomoc)
-    pomoc2=pomoc-9
+    pomoc2=(pomoc-9)*-1
     return pomoc2
