@@ -20,14 +20,14 @@ def koja(dat):
     nula3=0
     nula4=0
 
-    for j in range(y-23):  
+    for j in range(3):  
 
         for i in range(x):
             #print(i+2,j+2,pix[i+2,j+2])
             if pix[i,j+23]==0:
                 nula4+=1
     #print(nula4)
-    if nula4>180 or nula4<20:
+    if nula4>20:
         #print('nije karta')
         return 0
 

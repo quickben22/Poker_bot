@@ -42,7 +42,7 @@ def tko(dat):
     
     if nula4>2000:
         #print('na redu')
-        if pix[28,24]==255 and pix[28,25]==255 and pix[28,26]==255:
+        if pix[26,24]==255 and pix[26,25]==255 and pix[26,26]==255:
             print('check')
             return 1
         else:

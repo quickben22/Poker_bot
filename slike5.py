@@ -12,7 +12,7 @@ def grabi(pomak,pomak2):
         winlist.append((hwnd, win32gui.GetWindowText(hwnd)))
     win32gui.EnumWindows(enum_cb, toplist)
 
-    firefox = [(hwnd, title) for hwnd, title in winlist if 'notepad++' in title.lower()]
+    firefox = [(hwnd, title) for hwnd, title in winlist if '$0.01' in title.lower()]
     # just grab the hwnd for first window matching firefox
     firefox = firefox[0]
     hwnd = firefox[0]
@@ -38,11 +38,12 @@ def grabi(pomak,pomak2):
     im2=im1.crop(size)
     im2.save(dir+'pomak2.jpg','JPEG')
 
-    size=(743-pomak2,438+pomak,763-pomak2,480+pomak)
+
+    size=(741-pomak2,438+pomak,761-pomak2,480+pomak)
     im2=im1.crop(size)
     im2.save(dir+'1.jpg','JPEG')
 
-    size1=(762-pomak2,443+pomak,782-pomak2,487+pomak)
+    size1=(801-pomak2,438+pomak,821-pomak2,480+pomak)
     im2=im1.crop(size1)
     im2.save(dir+'2.jpg','JPEG')
 

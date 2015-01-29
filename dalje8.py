@@ -21,6 +21,7 @@ import vrsta
 import fajlovi
 import fajlovi2
 import korisna
+import primjer
 #import dbhash
 
 
@@ -28,7 +29,7 @@ situacija=0
 pom=0
 pom2=0
 zastavica=0
-vrijeme=4
+vrijeme=4000
 diz=0
 prvi=-3
 drugi=-3
@@ -1013,6 +1014,7 @@ while(vrijeme):     #BU,SB,BB,UTG,MP,CO,sve skupa, vidio 4 karte, vidio 5 karata
             situacija=umjetna4_1.inteligencija(card,jacina,znak,a,situacija,blinds,diz,button_gdje,vide_flop,pare_uigraca,bet_raise,check_call,foldic,vide_flop3,igraci_uigri,igraci_statistika,imena_igraca)
         print('ovo je situacija',situacija)
         diz=0
+        primjer.spremi(vrijeme,situacija)
             #print('nema flopa')
         
     

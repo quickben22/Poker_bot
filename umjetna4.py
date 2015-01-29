@@ -124,8 +124,11 @@ def inteligencija(card,jacina,znak,call,situacija2,blinds,diz,button_gdje,vide_f
     velicina_pota=blinds/5
     velicina_raisea=diz/5
     pare_uigraca2=pare_uigraca[:]
-    #blinds=int((blinds-diz)/2-1)#za 2/1 blindse
-    blinds=int((blinds-diz)/10-1)#za 10/5 blindse
+    blinds=int((blinds-diz)/2-1)#za 2/1 blindse
+    if blinds%2==1:
+	    blinds-=1
+	
+    #blinds=int((blinds-diz)/10-1)#za 10/5 blindse
     #button_gdje==6 BU, 5 SB, 4 BB, 3 UTG, 2 MP, 1 CO
     if velicina_raisea>0 and velicina_pota>0:
         postotak=float(velicina_raisea)/velicina_pota
