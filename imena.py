@@ -14,27 +14,27 @@ def pamti(broj,pomak,pomak2):
         pix2 = im3.load()
         im3.save(dir+'ime1.jpg') #ime1
     elif broj==2:
-        size=(26-pomak2,387+pomak,128-pomak2,402+pomak) #povecat za 1 kad bude trebalo
+        size=(26-pomak2,388+pomak,128-pomak2,403+pomak) #povecat za 1 kad bude trebalo
         im2=im.crop(size) 
         im3=im2.convert('P').convert('1')
         pix2 = im3.load()
         im3.save(dir+'ime2.jpg') #ime2
     elif broj==3:
-        size=(21-pomak2,148+pomak,123-pomak2,163+pomak) #povecat za 1 kad bude trebalo
+        size=(21-pomak2,151+pomak,123-pomak2,166+pomak) #povecat za 1 kad bude trebalo
         im2=im.crop(size) 
         im3=im2.convert('P').convert('1')
         pix2 = im3.load()
         im3.save(dir+'ime3.jpg') #ime3
     elif broj==4:
 
-        size=(905-pomak2,148+pomak,1007-pomak2,163+pomak) #povecat za 1 kad bude trebalo
+        size=(905-pomak2,151+pomak,1007-pomak2,166+pomak) #povecat za 1 kad bude trebalo
         im2=im.crop(size) 
         im3=im2.convert('P').convert('1')
         pix2 = im3.load()
         im3.save(dir+'ime4.jpg') #ime4
     elif broj==5:
 
-        size=(896-pomak2,386+pomak,998-pomak2,401+pomak) #povecat za 1 kad bude trebalo
+        size=(896-pomak2,387+pomak,998-pomak2,402+pomak) #povecat za 1 kad bude trebalo
         im2=im.crop(size) 
         im3=im2.convert('P').convert('1')
         pix2 = im3.load()

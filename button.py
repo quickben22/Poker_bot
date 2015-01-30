@@ -6,7 +6,7 @@ def gdje(pomak,pomak2):
     dir=folder.get()
     im = Image.open(dir+'slika.jpg')
 
-    size=(714-pomak2,441+pomak,731-pomak2,452+pomak) #povecat za 1 kad bude trebalo
+    size=(713-pomak2,441+pomak,730-pomak2,452+pomak) #povecat za 1 kad bude trebalo
     im2=im.crop(size) 
     im3=im2.convert('P').convert('1')
     pix = im3.load()
@@ -38,7 +38,7 @@ def gdje(pomak,pomak2):
         return (1)
     a=0
     
-    size=(145-pomak2,346+pomak,162-pomak2,357+pomak) #povecat za 1 kad bude trebalo
+    size=(147-pomak2,352+pomak,164-pomak2,363+pomak) #povecat za 1 kad bude trebalo
     im2=im.crop(size) 
     im3=im2.convert('P').convert('1')
     pix = im3.load()
@@ -70,7 +70,7 @@ def gdje(pomak,pomak2):
         return (3)
     a=0
 
-    size=(844-pomak2,222+pomak,861-pomak2,233+pomak) #povecat za 1 kad bude trebalo
+    size=(843-pomak2,223+pomak,860-pomak2,234+pomak) #povecat za 1 kad bude trebalo
     im2=im.crop(size) 
     im3=im2.convert('P').convert('1')
     pix = im3.load()
@@ -86,7 +86,7 @@ def gdje(pomak,pomak2):
         return (4)
     a=0
 
-    size=(870-pomak2,344+pomak,887-pomak2,355+pomak) #povecat za 1 kad bude trebalo
+    size=(859-pomak2,349+pomak,876-pomak2,360+pomak) #povecat za 1 kad bude trebalo
     im2=im.crop(size) 
     im3=im2.convert('P').convert('1')
     pix = im3.load()

@@ -18,7 +18,7 @@ def podaci(slika,pomak,pomak2): #koliko para igrac ima?
 
     
     elif slika==2:
-        size=(26-pomak2,405+pomak,128-pomak2,420+pomak) #povecat za 1 kad bude trebalo
+        size=(26-pomak2,406+pomak,128-pomak2,421+pomak) #povecat za 1 kad bude trebalo
         im2=im.crop(size) 
         im3=im2.convert('P').convert('1')
         pix1 = im3.load()
@@ -28,7 +28,7 @@ def podaci(slika,pomak,pomak2): #koliko para igrac ima?
 
 
     elif slika==3:
-        size=(21-pomak2,166+pomak,123-pomak2,181+pomak) #povecat za 1 kad bude trebalo
+        size=(21-pomak2,169+pomak,123-pomak2,184+pomak) #povecat za 1 kad bude trebalo
         im2=im.crop(size) 
         im3=im2.convert('P').convert('1')
         pix1 = im3.load()
@@ -37,7 +37,7 @@ def podaci(slika,pomak,pomak2): #koliko para igrac ima?
         
 
     elif slika==4:
-        size=(905-pomak2,166+pomak,1007-pomak2,181+pomak) #povecat za 1 kad bude trebalo
+        size=(905-pomak2,169+pomak,1007-pomak2,184+pomak) #povecat za 1 kad bude trebalo
         im2=im.crop(size) 
         im3=im2.convert('P').convert('1')
         pix1 = im3.load()
@@ -46,7 +46,7 @@ def podaci(slika,pomak,pomak2): #koliko para igrac ima?
         
 
     elif slika==5:
-        size=(896-pomak2,404+pomak,998-pomak2,419+pomak) #povecat za 1 kad bude trebalo
+        size=(896-pomak2,405+pomak,998-pomak2,420+pomak) #povecat za 1 kad bude trebalo
         im2=im.crop(size) 
         im3=im2.convert('P').convert('1')
         pix1 = im3.load()
@@ -193,6 +193,8 @@ def podaci(slika,pomak,pomak2): #koliko para igrac ima?
     potraga=[]
     oduz=[]
     vjerojatnost=[]
+    if len(nule_gdje)<1:
+        return 99999999999
     broj3=nule_gdje[0]+1
     #print(nule_gdje)
     broj14=[]
